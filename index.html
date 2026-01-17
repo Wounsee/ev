@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnoughVisuals - Визуальная модификация для Minecraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fixed Background -->
+    <div class="bg-layer">
+        <img src="imgs/bg.png" alt="">
+    </div>
+    <div class="bg-overlay"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <a href="#" class="logo">
+            <img src="imgs/logo.png" alt="EnoughVisuals">
+            <span class="logo-text">EnoughVisuals</span>
+        </a>
+        <div class="nav-links">
+            <a href="#features">Возможности</a>
+            <a href="#screenshots">Скриншоты</a>
+            <a href="#installation">Установка</a>
+        </div>
+        <a href="#download" class="nav-btn">
+            <i class="fas fa-download"></i>
+            Скачать
+        </a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-card glass">
+            <img src="imgs/logo.png" alt="EnoughVisuals" class="hero-logo">
+            <h1>EnoughVisuals</h1>
+            <p class="hero-subtitle">Лучшие визуалы</p>
+            <p class="hero-desc">Улучшите вашу игру с помощью бесплатных лучших визуалов. Оптимизировано для слабых устройств.</p>
+            
+            <div class="hero-badges">
+                <div class="badge">
+                    <i class="fas fa-cube"></i>
+                    <span>Minecraft 1.16.5</span>
+                </div>
+                <div class="badge">
+                    <i class="fab fa-java"></i>
+                    <span>Forge</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <i class="fas fa-download"></i>
+                    Скачать мод
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-arrow-down"></i>
+                    Подробнее
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-card glass animate">
+                <div class="section-title">
+                    <h2>Возможности</h2>
+                    <p>Что включено в модификацию</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card animate animate-delay-1">
+                        <div class="feature-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Система партиклов</h3>
+                        <p>Красивые и удобные партиклы</p>
+                    </div>
+                    
+                    <div class="feature-card animate animate-delay-2">
+                        <div class="feature-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Красивый худ</h3>
+                        <p>TargetHUD, Potions, Cooldowns и т.д</p>
+                    </div>
+                    
+                    <div class="feature-card animate animate-delay-3">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Производительность</h3>
+                        <p>Оптимизировано для слабых устройств</p>
+                    </div>
+                    
+                    <div class="feature-card animate animate-delay-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h3>Гибкие настройки</h3>
+                        <p>Настройки почти для каждой функции</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="section" id="screenshots">
+        <div class="container">
+            <div class="section-card glass animate">
+                <div class="section-title">
+                    <h2>Скриншоты</h2>
+                    <p>Как выглядит игра с нашим модом</p>
+                </div>
+                
+                <div class="screenshots-grid">
+                    <div class="screenshot animate animate-delay-1">
+                        <img src="imgs/screen1.jpg" alt="Скриншот 1">
+                    </div>
+                    <div class="screenshot animate animate-delay-2">
+                        <img src="imgs/screen2.jpg" alt="Скриншот 2">
+                    </div>
+                    <div class="screenshot animate animate-delay-3">
+                        <img src="imgs/screen3.jpg" alt="Скриншот 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="section" id="download">
+        <div class="container">
+            <div class="download-section glass animate">
+                <img src="imgs/logo.png" alt="EnoughVisuals" class="download-logo">
+                <h2>Скачать EnoughVisuals</h2>
+                <p>Установите мод и наслаждайтесь лучшими бесплатными визуалами</p>
+                
+                <div class="download-buttons">
+                    <div class="version-buttons">
+                        <div class="version-btn-wrapper">
+                            <button class="btn btn-primary version-btn" id="download-btn-1165" onclick="downloadMod(this, '1.16.5')">
+                                <span class="btn-content">
+                                    <i class="fas fa-download"></i>
+                                    1.16.5
+                                </span>
+                                <div class="spinner"></div>
+                            </button>
+                        </div>
+                        
+                        <div class="version-btn-wrapper">
+                            <button class="btn btn-disabled version-btn">
+                                <span class="btn-content">
+                                    <i class="fas fa-wrench"></i>
+                                    1.21.4
+                                </span>
+                            </button>
+                            <span class="in-dev-badge">В разработке</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-info">
+                    <span><i class="fas fa-shield-alt"></i> Безопасно</span>
+                    <span><i class="fas fa-file-archive"></i> .jar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation -->
+    <section class="section" id="installation">
+        <div class="container">
+            <div class="section-card glass animate">
+                <div class="section-title">
+                    <h2>Установка</h2>
+                    <p>Три простых шага</p>
+                </div>
+                
+                <div class="steps">
+                    <div class="step animate animate-delay-1">
+                        <div class="step-num">1</div>
+                        <h4>Скачайте мод</h4>
+                        <p>Нажмите кнопку выше</p>
+                    </div>
+                    <div class="step animate animate-delay-2">
+                        <div class="step-num">2</div>
+                        <h4>Откройте mods</h4>
+                        <p>.minecraft/mods</p>
+                    </div>
+                    <div class="step animate animate-delay-3">
+                        <div class="step-num">3</div>
+                        <h4>Поместите файл</h4>
+                        <p>Перенесите .jar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-card glass">
+                <a href="#" class="logo">
+                    <img src="imgs/logo.png" alt="EnoughVisuals">
+                    <span class="logo-text">EnoughVisuals</span>
+                </a>
+                
+                <div class="footer-links">
+                    <a href="https://t.me/enoughvisuals" target="_blank" title="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="https://t.me/enoughvisuals_devlog" target="_blank" title="Devlog">
+                        <i class="fas fa-newspaper"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-copy">© 2024 EnoughVisuals</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast glass" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-text">Загрузка началась!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
