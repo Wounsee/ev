@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /user/
+Disallow: /*?*
+
+Sitemap: https://enoughvisuals.fun/sitemap.xml
