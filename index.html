@@ -8,25 +8,51 @@
     <meta name="description" content="EnoughVisuals — это лучшие бесплатные визуалы для майнкрафт 1.16.5 и 1.21.4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Фавиконки для всех устройств и браузеров -->
+    <!-- Базовый ICO файл для максимальной совместимости -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- PNG фавиконки разных размеров -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <!-- Для Apple устройств -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Для мобильных устройств Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <!-- Manifest для PWA -->
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Цвет темы для браузеров -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    
+    <!-- Schema.org разметка -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "EnoughVisuals",
-  "applicationCategory": "GameApplication",
-  "operatingSystem": "Windows, macOS, Linux",
-  "description": "Бесплатные визуальные моды для Minecraft с красивыми партиклами и оптимизацией",
-  "softwareVersion": "1.16.5, 1.21.4",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
-}
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "EnoughVisuals",
+      "alternateName": ["EV", "Enough Visuals"],
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Windows, macOS, Linux",
+      "description": "Бесплатные визуальные моды для Minecraft с красивыми партиклами и оптимизацией",
+      "softwareVersion": "1.16.5, 1.21.4",
+      "image": "https://ваш-домен.com/android-chrome-512x512.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
     </script>
 </head>
 <body>
@@ -250,6 +276,7 @@
 </body>
 
 </html>
+
 
 
 
