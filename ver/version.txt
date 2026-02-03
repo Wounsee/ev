@@ -1,1 +1,1 @@
-EnoughVisuals-1.0.jar
+enoughvisuals-1.0.jar
